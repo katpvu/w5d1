@@ -14,7 +14,7 @@ describe "Hashing" do
 
     it "should produce the same hash for two equivalent arrays" do
       a = [1, 2, 3]
-      b = [1, 2, 3]
+      b = [1, 3, 2]
       expect(a.hash).to eq(b.hash)
     end
 

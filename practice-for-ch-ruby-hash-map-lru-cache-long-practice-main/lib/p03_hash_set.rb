@@ -10,6 +10,7 @@ class HashSet
   end
 
   def include?(key)
+    self[key].include?(key)
   end
 
   def remove(key)
@@ -26,5 +27,6 @@ class HashSet
 
   def [](num)
     # optional but useful; return the bucket corresponding to `num`
+    @store[num % num_buckets]
   end
 end
